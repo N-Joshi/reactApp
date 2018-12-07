@@ -4,6 +4,7 @@ import Root from './Root';
 import Parent from './family/parent';
 import Alphabet from './alphabet/alphabet';
 import Counter from './alphabet/counter/counter';
+import Lifecycle from './lifecycle/lifecycle';
 
 
 ReactDOM.render(<div>
@@ -24,6 +25,10 @@ ReactDOM.render(<div>
     <Alphabet fcolor="red" bcolor="yellow">W</Alphabet>
     <hr></hr>
     <Counter></Counter>
-    </div>, document.getElementById('root'));
+    <hr></hr>
+</div>, document.getElementById('root'))
+
+ReactDOM.render(
+<Lifecycle></Lifecycle>, document.getElementById("life"));
 
 
