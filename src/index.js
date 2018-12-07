@@ -5,6 +5,7 @@ import Parent from './family/parent';
 import Alphabet from './alphabet/alphabet';
 import Counter from './alphabet/counter/counter';
 import Lifecycle from './lifecycle/lifecycle';
+import RemoteAPI from './remote/remoteData';
 
 
 ReactDOM.render(<div>
@@ -30,5 +31,8 @@ ReactDOM.render(<div>
 
 ReactDOM.render(
 <Lifecycle></Lifecycle>, document.getElementById("life"));
+ReactDOM.render(
+    <RemoteAPI></RemoteAPI>, document.getElementById("remote"));
+    
 
 
