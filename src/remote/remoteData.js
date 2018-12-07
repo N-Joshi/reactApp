@@ -13,7 +13,7 @@ class RemoteAPI extends React.Component {
     }
 
     getRemoteData() {
-        axios.get("https://jsonplaceholder.typicode.com/users")
+        axios.get("http://localhost:3000/users")
             .then((received) => {
                 this.setState({ users: received.data })
                 console.log(this.state.users)
@@ -38,6 +38,7 @@ class RemoteAPI extends React.Component {
     render() {
         return (
             <div>
+            <hr></hr>
             <h1>Fetching Data!!!</h1>
             <table>
                 <thead>

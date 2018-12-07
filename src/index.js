@@ -6,6 +6,7 @@ import Alphabet from './alphabet/alphabet';
 import Counter from './alphabet/counter/counter';
 import Lifecycle from './lifecycle/lifecycle';
 import RemoteAPI from './remote/remoteData';
+import ParentForm from './form/parentform';
 
 
 ReactDOM.render(<div>
@@ -33,6 +34,8 @@ ReactDOM.render(
 <Lifecycle></Lifecycle>, document.getElementById("life"));
 ReactDOM.render(
     <RemoteAPI></RemoteAPI>, document.getElementById("remote"));
+ ReactDOM.render(
+    <ParentForm></ParentForm>, document.getElementById("form"));
     
 
 
